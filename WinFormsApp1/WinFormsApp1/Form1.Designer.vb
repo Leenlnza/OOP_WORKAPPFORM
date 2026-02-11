@@ -28,6 +28,7 @@ Partial Class Form1
         Button1 = New Button()
         DataGridView1 = New DataGridView()
         TextBox2 = New TextBox()
+        Button2 = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -83,11 +84,21 @@ Partial Class Form1
         TextBox2.Size = New Size(188, 39)
         TextBox2.TabIndex = 4
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(905, 599)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(99, 23)
+        Button2.TabIndex = 5
+        Button2.Text = "Export Excel"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1016, 644)
+        Controls.Add(Button2)
         Controls.Add(TextBox2)
         Controls.Add(DataGridView1)
         Controls.Add(Button1)
@@ -105,5 +116,6 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Button2 As Button
 
 End Class
